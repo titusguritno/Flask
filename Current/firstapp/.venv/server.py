@@ -24,4 +24,4 @@ class Server:
             
 if __name__ == '__main__':
     server = Server()
-    socketio.run(app, host='0.0.0.0', port=5555, debug=True)
+    socketio.run(app, host='0.0.0.0', port=5555, debug=True, use_reloader=True, log_output=True)
